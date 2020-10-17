@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -7,8 +7,6 @@ import Computer from '@material-ui/icons/Chat';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-import { Redirect } from 'react-router'
-
 
 const useStyles = makeStyles((theme) => ({
     paper: {
@@ -31,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
   }))
 
 const Home = () => {
-  const[deppLinkClicked, setDeppLinkClicked] = useState(false);
   const[deppLink, setDeppLink] = useState('');
   const classes = useStyles();
 
